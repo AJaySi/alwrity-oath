@@ -1,6 +1,4 @@
-import time
 import os
-import json
 import streamlit as st
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 import google.generativeai as genai
@@ -66,7 +64,7 @@ def input_section():
         with col1:
             brand_name = st.text_input('**Enter Brand/Company Name**', help="Enter the name of your brand or company.")
         with col2:
-            description = st.text_input(f'**Describe What {brand_name} Does ?** (In 5-6 words)', help="Describe your product or service briefly.")
+            description = st.text_input(f'**Describe What Your Company Does ?** (In 5-6 words)', help="Describe your product or service briefly.")
 
         oblivious = st.text_input(f'**Address the Oblivious Audience**', help="Highlight a problem or need that the audience may not be aware of.")
         apathetic = st.text_input(f'**Engage with the Apathetic Audience**', help="Connect with the audience who may know about the problem but are indifferent.")
