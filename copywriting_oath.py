@@ -78,6 +78,7 @@ def input_section():
                     if oath_copy:
                         st.subheader('**👩🔬👩🔬 Your OATH Copy**')
                         st.markdown(oath_copy)
+                        st.markdown("\n\n\n")
                     else:
                         st.error("💥 **Failed to generate OATH copy. Please try again!**")
             else:
